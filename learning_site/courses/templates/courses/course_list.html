@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Courses</title>
-</head>
-<body>
-    <h1>Django Course Site</h1>
+{% extends "layout.html" %}
 
-    {% for course in courses %}
-    <h2>{{ course.title }}</h2>
-    <p>{{ course.description }}</p>
+{% block title %}Available Courses{% endblock %}
+
+{% block content %}
+<div class="cards">
+    {$ for course in courses %}
+    <div class="card">
+        <header><a href="{% url 'detail' pk=course.pk %}">{{ course.title }}</a></header>
+        <div class="card-copy">
+            {{ course.description }}
+        </div>
+    </div>
     {% endfor %}
-
-</body>
-</html>
+</div>
+{% endblock %}
