@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+    <h1>Django Course Site</h1>
+
+    {% for course in courses %}
+    <h2>{{ course.title }}</h2>
+    <p>{{ course.description }}</p>
+    {% endfor %}
+
+</body>
+</html>
