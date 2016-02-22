@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1d21dd-0d96-4d56-a316-d01f33292540" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/views.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoTutSite/settings.py" afterPath="$PROJECT_DIR$/djangoTutSite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangoTutSite/urls.py" afterPath="$PROJECT_DIR$/djangoTutSite/urls.py" />
-    </list>
+    <list default="true" id="6c1d21dd-0d96-4d56-a316-d01f33292540" name="Default" comment="" />
     <ignored path="djangoTutSite.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
