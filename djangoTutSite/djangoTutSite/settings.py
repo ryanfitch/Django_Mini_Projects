@@ -31,9 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 # Added new webapp app
+# Added new personal app
 
 INSTALLED_APPS = [
     'webapp',
+    'personal',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
