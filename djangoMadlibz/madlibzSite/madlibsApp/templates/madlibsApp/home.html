@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css"/>
     <style>
         body {
-            margin-top: 15px;
+            margin-top: 5px;
         }
         footer {
             margin-top: 50px;
@@ -13,15 +13,41 @@
             border-top: 1px solid #EEE;
         }
         .output {
-          line-height: 50px;
+            line-height: 50px;
         }
+        .form {
+            max-width: 550px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body>
+    <div class="text-center jumbotron">
+        <h1>Hello!</h1>
+        <p>Madlibs Game</p>
+    </div>
+    <div>
+        <div>
 
-    <h1 class="jumbotron">Hello!</h1>
-    <p>Madlibs Game</p>
+            <!--{% for key in data %}-->
 
+
+
+            <!--{% endfor %}-->
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <form class="form" id="login_form" method="post" action="/app/profile/">
+          <br>
+          <input type="text" name="user" class="form-control" placeholder="Madlib Word" value="" required autofocus>
+          <br>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit Madlib</button>
+        </form>
+    </div>
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <footer class="footer">
