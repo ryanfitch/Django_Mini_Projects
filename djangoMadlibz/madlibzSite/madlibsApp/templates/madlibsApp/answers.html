@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Madlibz API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css"/>
+    <style>
+        body {
+            margin: 50px
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 15px;
+            border-top: 1px solid #EEE;
+        }
+        .output {
+            line-height: 50px;
+        }
+        .form {
+            max-width: 550px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <img src="http://1.bp.blogspot.com/-1X-kgAXK_bs/USOWWN-xu1I/AAAAAAAAAXM/4c9kLfJSrV4/s1600/madlibslogo.png" />
+    </div>
+    <br><br>
+
+    {% block content %}
+
+    <h1 class="text-center">{{ data.title }}</h1>
+    <br>
+    <p class="text-center">
+        <br>
+
+        {% for a in pleaseWork %}
+        {{ a }}
+        {% endfor %}
+
+
+    </p>
+
+
+    {% endblock %}
+
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>

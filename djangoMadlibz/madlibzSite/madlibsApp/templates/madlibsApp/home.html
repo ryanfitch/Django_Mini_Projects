@@ -24,40 +24,41 @@
     </style>
 </head>
 <body>
-    <div class="text-center jumbotron">
-        <h1>Hello!</h1>
-        <p>Madlibs Game</p>
+
+    <div class="text-center">
+        <img src="http://1.bp.blogspot.com/-1X-kgAXK_bs/USOWWN-xu1I/AAAAAAAAAXM/4c9kLfJSrV4/s1600/madlibslogo.png" />
     </div>
     <div>
-        <div>
+        <div class="text-center">
+            <br>
 
-            <!--{% for key in data %}-->
-
-
-
-            <!--{% endfor %}-->
+            {% block content %}
+                 <h1>{{ data.title }}</h1>
+                    <br><br>
+                 <div class="container text-center">
+                     {% for c in data.blanks%}
+                    <form class="form" id="login_form" method="POST" action="">{% csrf_token %}
+                        <input type="text" name="user" class="form-control" placeholder=" {{ c }} " value="" required autofocus>
+                        <br>
+                {% endfor %}
+                {% endblock %}
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit Madlib</button>
+                    </form>
+                </div>
 
         </div>
     </div>
 
-    <div class="container text-center">
-        <form class="form" id="login_form" method="post" action="/app/profile/">
-          <br>
-          <input type="text" name="user" class="form-control" placeholder="Madlib Word" value="" required autofocus>
-          <br>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit Madlib</button>
-        </form>
-    </div>
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
+    <!--<footer class="footer">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
                 <!--<p class="text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Herman Fassett</p>-->
                 <!--<p><a href="https://github.com/HermanFassett/madlibz">View on GitHub</a></p>-->
-            </div>
-        </div>
-    </footer>
+            <!--</div>-->
+        <!--</div>-->
+    <!--</footer>-->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
