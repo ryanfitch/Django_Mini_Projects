@@ -41,10 +41,9 @@
     <div>
         <div class="text-center">
             <br>
-
+            <h1 class="text-center" style="font-family: 'acme'; font-size: 40px; color: #0a3048;">Hall Of Fame!</h1><br>
     {% block content %}
-        <h1 class="text-center" style="font-family: 'acme'; font-size: 40px; color: #0a3048;">Hall Of Fame!</h1>
-        <br>
+
         {% for post in object_list %}
             <h5 class="text-center" style="font-family: 'acme'; font-size: 20px; color: #0a3048;">{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"> {{post.title}}</a> </h5>
         {% endfor %}
