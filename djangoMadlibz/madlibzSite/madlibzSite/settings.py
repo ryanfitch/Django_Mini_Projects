@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'multiforloop',
     'madlibsApp',
     'blog',
     'django.contrib.admin',
