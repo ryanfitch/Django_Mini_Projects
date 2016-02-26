@@ -27,7 +27,16 @@
     <div class="text-center">
         <img src="http://1.bp.blogspot.com/-1X-kgAXK_bs/USOWWN-xu1I/AAAAAAAAAXM/4c9kLfJSrV4/s1600/madlibslogo.png" />
     </div>
-    <br><br>
+    <br>
+
+    <div class="well bs-sidebar text-center" id="sidebar" style="background-color:#fff">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href='http://127.0.0.1:8000/madlibsapp/'>Write A Madlib</a></li>
+            <li><a href='/blog/'>Hall Of Fame!</a></li>
+        </ul>
+    </div>
+
+    <br>
 
     {% block content %}
 
@@ -37,9 +46,10 @@
         <br>
 
         {% for a in pleaseWork %}
-        {{ a }}
-        {% endfor %}
 
+            {{ a.0 }} {{ a.1 }}
+
+        {% endfor %}
 
     </p>
 
@@ -47,9 +57,7 @@
     {% endblock %}
 
 
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>

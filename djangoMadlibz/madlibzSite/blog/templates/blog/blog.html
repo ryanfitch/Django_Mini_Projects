@@ -1,0 +1,9 @@
+{% extends "madlibsApp/answers.html" %}
+
+{% block content %}
+    <h1 class="text-center">Hall Of Fame!</h1>
+    <br><br>
+    {% for post in object_list %}
+        <h5 class="text-center">{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"> {{post.title}}</a> </h5>
+    {% endfor %}
+{% endblock %}

@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^madlibsapp/', include('madlibsApp.urls')),
-    # url(r'^madlibsapp/answer', include('madlibsApp.urls')),
+    url(r'^blog/', include('blog.urls')),
+    # url(r'^madlibsapanswer', include('madlibsApp.urls')),
 ]

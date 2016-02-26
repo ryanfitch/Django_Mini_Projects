@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1d21dd-0d96-4d56-a316-d01f33292540" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/templates/madlibsApp/answers.html" afterPath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/templates/madlibsApp/answers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/templates/madlibsApp/home.html" afterPath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/templates/madlibsApp/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/urls.py" afterPath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/views.py" afterPath="$PROJECT_DIR$/../djangoMadlibz/madlibzSite/madlibsApp/views.py" />
@@ -138,7 +139,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="20" />
-    <option name="y" value="-764" />
+    <option name="y" value="4" />
     <option name="width" value="1260" />
     <option name="height" value="760" />
   </component>
@@ -408,7 +409,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="-764" width="1260" height="760" extended-state="1" />
+    <frame x="20" y="4" width="1260" height="760" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24939467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
