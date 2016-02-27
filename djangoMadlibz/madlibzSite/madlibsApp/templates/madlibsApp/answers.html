@@ -49,7 +49,8 @@
 
             {% for a in pleaseWork %}
 
-                {{ a.0 }} {{ a.1 }}
+            <span style="color: #0a3048;">  {{ a.0 }} </span>
+            <span style="color: #eb6864;">  {{ a.1 }} </span>
 
             {% endfor %}
 
@@ -60,8 +61,8 @@
                 <div class="container text-center">
                     <p style="font-family: 'acme'; font-size: 28px; color: #0a3048;">Would you like to add your Madlib into the Hall Of Fame??</p>
                     <form class="form" id="login_form" method="POST" action="">{% csrf_token %}
-                        <input type="text" name="user" class="form-control" placeholder="Name" value="" required autofocus>
-                        <input type="text" name="user" class="form-control" placeholder="Comment (Or Heckle)" value="" required autofocus>
+                        <input type="text" name="user" class="form-control" placeholder="Name" value="" required>
+                        <input type="text" name="user" class="form-control" placeholder="Comment (Or Heckle)" value="" required>
                         <br>
                         <button class="btn btn-lg btn-primary btn-block" type="submit">Yes,  Add My Madlib To Hall of Fame!</button>
                     </form>
