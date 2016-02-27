@@ -45,7 +45,7 @@
     {% block content %}
 
         {% for post in object_list %}
-            <h5 class="text-center" style="font-family: 'acme'; font-size: 20px; color: #0a3048;">{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"> {{post.title}}</a> </h5>
+            <h5 class="text-center" style="font-family: 'acme'; font-size: 20px; color: #0a3048;">{{ post.date|date:"m-d-Y" }}<a href="/blog/{{post.id}}"> {{post.title}}</a> </h5>
         {% endfor %}
     {% endblock %}
 

@@ -43,11 +43,14 @@
             <br>
             <h1 class="text-center" style="font-family: 'acme'; font-size: 40px; color: #0a3048;">Hall Of Fame!</h1><br>
 
-{% block content %}
-    <h3>{{post.title}}</h3>
-    <h6>on {{post.date}}</h6>
-    {{post.body|safe|linebreaks}}
-{% endblock %}
+    {% block content %}
+        <h4 style="font-family: 'acme'; font-size: 30px; color: #0a3048;">on {{post.date}}</h4>
+        <h4 style="font-family: 'acme'; font-size: 30px; color: #0a3048;">{{post.name}} says...</h4>
+            <h5 style="font-family: 'acme'; font-size: 30px; color: #0a3048;">"{{post.comment}}"</h5><br>
+            <h3 style="font-family: 'acme'; font-size: 40px; color: #0a3048;">{{post.title}}</h3>
+        {{post.body|safe|linebreaks}}
+
+        {% endblock %}
 
         <footer>
             <div class="container-fluid text-center" style='margin-left:15px'>

@@ -33,7 +33,7 @@
     <br>
     <div class="text-center" style="background-color:#fff; font-size: 25px">
         <ul class="nav nav-tabs nav-justified">
-            <li role="presentation" class="active"><a href='http://127.0.0.1:8000/madlibsapp/'>Write A Madlib!</a></li>
+            <li role="presentation" class="active"><a href='http://127.0.0.1:8000/playagain/'>Write A Madlib!</a></li>
             <li role="presentation"><a href='/blog/'>Hall Of Fame!</a></li>
         </ul>
     </div>
@@ -48,7 +48,7 @@
                     <br>
                  <div class="container text-center">
                      {% for c in data.blanks%}
-                    <form class="form" id="login_form" method="POST" action="">{% csrf_token %}
+                    <form class="form" id="login_form" method="POST" action="http://127.0.0.1:8000/madlibsapp/">{% csrf_token %}
                         <input type="text" name="user" class="form-control" placeholder=" {{ c }} " value="" required autofocus>
                         <br>
                 {% endfor %}

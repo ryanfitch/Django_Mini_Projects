@@ -1,4 +1,4 @@
-"""madlibzSite URL Configuration
+"""madlibSite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^', include('madlibsApp.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^madlibsapp/', include('madlibsApp.urls')),
+    url(r'^playagain/', include('madlibsApp.urls')),
     url(r'^blog/', include('blog.urls')),
     # url(r'^madlibsapanswer', include('madlibsApp.urls')),
 ]
